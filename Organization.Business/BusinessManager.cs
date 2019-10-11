@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Organization.Business
 {
-    public class Class1
+    /// <summary>
+    /// 
+    /// </summary>
+    public class BusinessManager
     {
     }
 }
