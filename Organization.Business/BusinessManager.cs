@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Organization.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,16 @@ namespace Organization.Business
     /// <summary>
     /// 
     /// </summary>
-    public class BusinessManager
+    public class BusinessManager :IBusinessManager
     {
+        private IDataManager _dataManager = default;
+
+        public BusinessManager()
+        {
+            _dataManager = new DataManager(); 
+        }
+
+
+
     }
 }

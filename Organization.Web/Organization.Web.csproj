@@ -140,6 +140,16 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Organization.Business\Organization.Business.csproj">
+      <Project>{f2e85fbd-47f3-4507-b999-2fba1b8964ca}</Project>
+      <Name>Organization.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Organization.Entities\Organization.Entities.csproj">
+      <Project>{48c7e49c-f641-4331-9c0e-8e857830bb57}</Project>
+      <Name>Organization.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
